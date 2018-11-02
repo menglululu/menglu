@@ -1,0 +1,115 @@
+/* 分组选择器： 公用同一套样式 符号是一个逗号隔开
+body{width: 100%;height: 100%;}
+html{width: 100%;height: 100%;}
+.swiper-container{width: 100%;height: 100%;}
+*/
+body,html,.swiper-container,.main{width: 100%;height:100%;overflow: hidden}
+html{font-size: 100px;}
+/*把所有运动元素隐藏起来 opacity：0*/
+.page1 .text,.page1 .text .text01,.page1 .text .text02,.page1 .text .text03,.page1 .text .text04,.page1 .tuzhang,.page2 .text1 span,.page2 .text2 span,.page3 .bg,.page3 .circle,.page3 .text,.page3 .people div,.page3 .btns{opacity:0}
+/*箭头*/
+.arrow{z-index:99;position:absolute;bottom:.2rem;left:50%;margin-left:-.425rem;width:.59rem;height: .41rem;background:url("../images/arrow.png") no-repeat;background-size: cover;-webkit-animation: fadeInUp 1s .2s infinite ease both;
+    animation: fadeInUp 1s .2s infinite ease both;}
+/*音乐*/
+.music{z-index:100;position:absolute;top:.2rem;left:.2rem;width:.6rem;height:.6rem;background: url("../audio/music.svg") no-repeat;background-size:100% 100%}
+.music audio {
+    display: none;
+}
+/*音乐动画*/
+.music {
+    -webkit-animation: musicMove 1s linear 0s infinite both;
+    animation: musicMove 1s linear 0s infinite both;
+}
+@-webkit-keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+/* 第一屏*/
+.page1{background:url("../images/bj.jpg") no-repeat;background-size: 100% 100%;}
+.page1 .text div{width:1.2rem;margin:1.2rem auto}
+.page1 .text .text01{height: 1.12rem;background:url("../images/text01.png") no-repeat;background-size: cover;}
+.page1 .text .text02{height: 1.12rem;background:url("../images/text02.png") no-repeat;background-size: cover;}
+.page1 .text .text03{height: 1.12rem;background:url("../images/text03.png") no-repeat;background-size: cover;}
+.page1 .text .text04{height: 1.12rem;background:url("../images/text04.png") no-repeat;background-size: cover;}
+/* 第一屏元素动画*/
+#page1 .text{-webkit-animation: fadeIn 1s ease 1s both;animation: fadeIn 1s ease .2s both;}
+#page1 .text .text01{-webkit-animation: fadeIn 1s ease .2s both;animation: fadeIn 1s ease .2s both}
+#page1 .text .text02{-webkit-animation: fadeIn 1s ease .6s both;animation: fadeIn 1s ease .6s both}
+#page1 .text .text03{-webkit-animation: fadeIn 1s ease 1s both;animation: fadeIn 1s ease 1s both}
+#page1 .text .text04{-webkit-animation: fadeIn 1s ease 1.4s both;animation: fadeIn 1s ease 1.4s both}
+/* 第二屏*/
+.page2{background:url("../images/bj2.jpg") no-repeat;background-size: 100% 100%;}
+.page2 .bg{width:2rem;height:3rem;background: url("../images/wo.jpg") no-repeat;background-size: cover;margin-left: 2.3rem;margin-top: 1.5rem}
+.page2 .text{position:absolute;top:3.4rem;}
+.page2 .text span{width:4rem;height:0.8rem;margin-left:1.34rem;float: left; line-height: 4rem;text-align: center;}
+/* 第二屏元素动画*/
+#page2 span{opacity: 0;}
+#page2 .bg{-webkit-animation: bounceInDown 1s ease .2s both;animation: bounceInDown 1s ease .2s both}
+#page2 .text span:nth-child(1){-webkit-animation: bounceInRight 1s ease 1s both;animation: bounceInRight 1s ease 1s both}
+#page2 .text span:nth-child(2){-webkit-animation: bounceInRight 1s ease 1.2s both;animation: bounceInRight 1s ease 1.2s both}
+#page2 .text span:nth-child(3){-webkit-animation: bounceInRight 1s ease 1.4s both;animation: bounceInRight 1s ease 1.4s both}
+#page2 .text span:nth-child(4){-webkit-animation: bounceInRight 1s ease 1.6s both;animation: bounceInRight 1s ease 1.6s both}
+#page2 .text span:nth-child(5){-webkit-animation: bounceInRight 1s ease 1.8s both;animation: bounceInRight 1s ease 1.8s both}
+#page2 .text span:nth-child(6){-webkit-animation: bounceInRight 1s ease 2s both;animation: bounceInRight 1s ease 2s both}
+/* 第三屏*/
+.page3{background:url("../images/bj3.jpg") no-repeat;background-size: 100% 100%;}
+.page3 .circle{position: absolute;top:1.2rem;height:5.74rem;left:50%;margin-left: -1rem;width:5.56rem;}
+.page3 .text{position: absolute;top:3rem;}
+.page3 .text div{width: 4rem;height: 1.4rem;float: left;margin-left: 2.2rem;}
+.page3 .tubiao{position: absolute;left:1rem;top:3rem;}
+.page3 .tubiao .tu01{top:10rem;width:0.9rem;height: 0.56rem;background:url("../images/WS.png") no-repeat;background-size: cover;}
+.page3 .tubiao .tu02{margin-top:.6rem;margin-left:-0.12rem;width:1.2rem;height: 0.804rem;background:url("../images/PS.png") no-repeat;background-size: cover;}
+.page3 .tubiao .tu03{margin-top:.7rem;margin-left:0.12rem;width:0.6rem;height: 0.6rem;background:url("../images/AI.png") no-repeat;background-size: cover;}
+.page3 .tubiao .tu04{margin-top:.7rem;margin-left:0.12rem;width:0.5rem;height: 0.7rem;background:url("../images/3D.png") no-repeat;background-size: cover;}
+.page3 .tubiao .tu05{margin-top:.8rem;margin-left:0.12rem;width:0.5rem;height: 0.5rem;background:url("../images/word.png") no-repeat;background-size: cover;}
+/* 第三屏元素动画*/
+#page3 .circle{-webkit-animation: rotate .6s  .6s ease both ;animation: rotate .6s  .6s ease both}
+#page3 .text{opacity: 0;-webkit-animation: fadeIn 1s  1.4s ease both ;animation: fadeIn 1s  1.4s ease both}
+#page3 .text .text01{-webkit-animation: bounceInRight 1s ease 2s both;animation: bounceInRight 1s ease 2s both}
+#page3 .text .text02{-webkit-animation: bounceInRight 1s ease 3s both;animation: bounceInRight 1s ease 3s both}
+#page3 .text .text03{-webkit-animation: bounceInRight 1s ease 4s both;animation: bounceInRight 1s ease 4s both}
+#page3 .text .text04{-webkit-animation: bounceInRight 1s ease 5s both;animation: bounceInRight 1s ease 5s both}
+#page3 .text .text05{-webkit-animation: bounceInRight 1s ease 6s both;animation: bounceInRight 1s ease 6s both}
+#page3 .tubiao{-webkit-animation: fadeIn 1s  1s ease both ;animation: fadeIn 1s  2s ease both}
+#page3 .tubiao .tu01{-webkit-animation: bounceInLeft 1s ease 2s both;animation: bounceInLeft 1s ease 2s both;}
+#page3 .tubiao .tu02{-webkit-animation: bounceInLeft 1s ease 3s both;animation: bounceInLeft 1s ease 3s both;}
+#page3 .tubiao .tu03{-webkit-animation: bounceInLeft 1s ease 4s both;animation: bounceInLeft 1s ease 4s both;}
+#page3 .tubiao .tu04{-webkit-animation: bounceInLeft 1s ease 5s both;animation: bounceInLeft 1s ease 5s both;}
+#page3 .tubiao .tu05{-webkit-animation: bounceInLeft 1s ease 6s both;animation: bounceInLeft 1s ease 6s both;}
+@-webkit-keyframes rotate {
+    0%{transform: rotate(0deg)}
+    100%{opacity: 1; transform: rotate(360deg)}
+}
+@keyframes rotate {
+    0%{transform: rotate(0deg)}
+    100%{opacity: 1; transform: rotate(360deg)}
+}
+/*第四屏*/
+.page4{background:url("../images/bj3.jpg") no-repeat;background-size: 100% 100%;}
+.page4 .circle01{position: absolute;top:1.2rem;left:50%;margin-left:-1rem;width:5.56rem;height:5.74rem;}
+.page4 .circle02{position: absolute;top:7rem;left:50%;margin-left:-1rem;width:5.56rem;height:5.74rem;}
+.page4 .text01{position:absolute;top:2rem;}
+.page4 .text01 span{width:4rem;height:0.8rem;margin-left:1.32rem;float: left; line-height: .4rem;}
+.page4 .text02{position:absolute;top:7.8rem;}
+.page4 .text02 span{width:4rem;height:0.8rem;margin-left:1.32rem;float: left; line-height: .4rem;}
+/*第四屏元素动画*/
+#page4 .circle01{-webkit-animation: bounceInRight 1s ease 1s both;animation: bounceInRight 1s ease 1s both;}
+#page4 .circle02{-webkit-animation: bounceInRight 1s ease 1s both;animation: bounceInRight 1s ease 1s both;}
+#page4 .text01{-webkit-animation: bounceInRight 1s ease 2s both;animation: bounceInRight 1s ease 2s both;}
+#page4 .text02{-webkit-animation: bounceInRight 1s ease 2s both;animation: bounceInRight 1s ease 2s both;}
